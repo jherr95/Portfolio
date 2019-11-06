@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+    Name:Joel Herr
+    Email:joelherr@yahoo.com
+    Date Created:11/03/2019
+    Most Recent Revision:11/03/2019
+-->
+    
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+    </head>
+    
+    <body>
+        <header> 
+            <h1><center>Jay Boys Cooking</center></h1>
+        </header>
+        
+        <nav><!-- The nav element will include navigation buttons or links -->
+            <hr /> <!--  We need to add links to Restaurant-Site.html, Menu.html, and Contact-Us.html-->
+            <p><a href="Restaurant-Site.html">Home</a>  <a href="Menu.html">Menu</a>  <a href="Contact-Us.html">Contact Us</a></p>
+            <hr />
+        </nav>
+        <form action="submit.html" method="POST">
+            <!-- Name label and text box -->
+            <center><label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br />
+        
+            <!-- Email label and text box -->
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br />
+            
+            <!-- Phone number label and text box -->
+            <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br />
+           
+            <!-- Dropdown list -->
+            <label for="reasonForInquiry">Reason for Inquiry:</label>
+            <select id="reasonForInquiry" name="reasonForInquiry">
+                <option value="default" selected>Catering</option>
+                <option value="option1">Private Party</option>
+                <option value="option2">Feedback</option>
+                <option value="option3">Other</option>
+            </select><br />
+                
+            <!-- Textarea -->
+            <label for="info">Additional Information:</label>
+            <textarea id="info" name="info"></textarea><br />
+           
+            <!-- Radio buttons -->
+            Have you been to the restaurant?
+            <input type="radio" id="choice1" name="questionaire" value="No" checked>
+            <label for="choice1">No</label>
+            <input type="radio" id="choice2" name="questionaire" value="Yes">
+            <label for="choice2">Yes</label><br />
+
+            <!-- Checklist -->
+            Best days to contact you:  
+            <input type="checkbox" id="monday" name="interest" value="monday">
+            <label for="monday">M</label>
+            <input type="checkbox" id="tuesday" name="interest" value="tuesday">
+            <label for="tuesday">T</label>
+            <input type="checkbox" id="wednesday" name="interest" value="wednesday">
+            <label for="wednesday">W</label>
+            <input type="checkbox" id="thursday" name="interest" value="thursday">
+            <label for="thursday">Th</label>
+            <input type="checkbox" id="friday" name="interest" value="friday">
+            <label for="friday">F</label><br />
+            
+            <!-- Submit button  --> 
+            <input type="submit" name="submit" value="Submit Request">
+            
+            </center>
+        </form>
+        <hr />
+        <footer>
+            <p style="text-align: center">1234 Mclovin Lane, Southend, NC 22202</p>
+            <p style="text-align: center">(704) 432-2335</p>
+        </footer>
+    </body>
+</html>
