@@ -9,9 +9,19 @@
 <html lang="en">
     <main>
         <head>
-            <title>Home Page</title>
-            <link href="Styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
            
+            
+            <title>Home Page</title>
+            
+            <link href="Styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+            
+           <style>
+               
+               img {
+                   display: block; margin-right: auto; margin-left: auto;
+               
+               
+           </style>
         </head>
     
         <body>
@@ -22,12 +32,15 @@
         
         
         <nav><!-- The nav element will include navigation buttons or links -->
-            <hr /> <!--  We need to add links to Restaurant-Site.html, Menu.html, and Contact-Us.html-->
-            <p><a href="Restaurant-Site.html">Home</a>  <a href="Menu.html">Menu</a>  <a href="Contact-Us.html">Contact Us</a></p>
-            <hr />
+                <!--  We need to add links to Restaurant-Site.html, Menu.html, and Contact-Us.html-->
+                <hr/>
+                <p><a href="Restaurant-Site.html">Home</a>
+                <a href="Menu.html">Menu</a>  
+                <a href="Contact-Us.html">Contact Us</a></p>
+                <hr/>
         </nav>
         
-        <img src="images/Tacos.jpg" alt="restaurant company image"/>
+        <img src="images/Tacos.jpg" alt="restaurant company image" style="width: 20%; border-radius: 8px" class="img-fluid"/>
         <section>
             <article id="Restaurant Description">
                 <center><h2><em>Restaurant Description</em></h2></center>
@@ -40,6 +53,8 @@
             <p>1234 Mclovin Lane, Southend, NC 22202</p>
             <p>(704) 432-2335</p>
         </footer>
+        
+        
         </body>
     </main>
 </html>
