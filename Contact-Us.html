@@ -8,33 +8,65 @@
     
 <html lang="en">
     <head>
+        
         <title>Contact Us</title>
+        
+        <link href="Styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+        
+    
+        <style>
+            
+            form {
+                text-align: center;
+            }
+            
+            label{
+                font-weight: bold;
+            }
+            
+            .warning {
+                display: none;
+                font-weight: bold;
+            }
+           
+        </style>
     </head>
     
     <body>
         <header> 
-            <h1><center>Jay Boys Cooking</center></h1>
+            <h1>Jay Boys Cooking</h1>
         </header>
         
         <nav><!-- The nav element will include navigation buttons or links -->
             <hr /> <!--  We need to add links to Restaurant-Site.html, Menu.html, and Contact-Us.html-->
-            <p><a href="Restaurant-Site.html">Home</a>  <a href="Menu.html">Menu</a>  <a href="Contact-Us.html">Contact Us</a></p>
+            <p> <a href="Restaurant-Site.html">Home</a>  
+                <a href="Menu.html">Menu</a>  
+                <a href="Contact-Us.html">Contact Us</a></p>
             <hr />
         </nav>
+        
+         <div class="warning">
+            <p>The following errors occurred:</p> 
+        </div>
+        
         <form action="submit.html" method="POST">
             <!-- Name label and text box -->
-            <center><label for="name">Name:</label>
+            <p class="warning">Name is required.</p> 
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br />
         
             <!-- Email label and text box -->
+            <p class="warning">Email is required.</p> 
             <label for="email">Email:</label>
             <input type="text" id="email" name="email"><br />
             
             <!-- Phone number label and text box -->
+            <p class="warning">Phone number is required.</p> 
             <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="phone"><br />
+            <input type="text" id="phone" name="phone"><br />
            
             <!-- Dropdown list -->
+            <p class="warning">Reason is required.</p> 
             <label for="reasonForInquiry">Reason for Inquiry:</label>
             <select id="reasonForInquiry" name="reasonForInquiry">
                 <option value="default" selected>Catering</option>
@@ -44,18 +76,21 @@
             </select><br />
                 
             <!-- Textarea -->
-            <label for="info">Additional Information:</label>
+            Additional Information:
             <textarea id="info" name="info"></textarea><br />
            
             <!-- Radio buttons -->
+            
             Have you been to the restaurant?
             <input type="radio" id="choice1" name="questionaire" value="No" checked>
             <label for="choice1">No</label>
             <input type="radio" id="choice2" name="questionaire" value="Yes">
             <label for="choice2">Yes</label><br />
+            
 
             <!-- Checklist -->
-            Best days to contact you:  
+            
+            Best days to contact you:
             <input type="checkbox" id="monday" name="interest" value="monday">
             <label for="monday">M</label>
             <input type="checkbox" id="tuesday" name="interest" value="tuesday">
@@ -67,15 +102,15 @@
             <input type="checkbox" id="friday" name="interest" value="friday">
             <label for="friday">F</label><br />
             
+    
             <!-- Submit button  --> 
             <input type="submit" name="submit" value="Submit Request">
             
-            </center>
         </form>
         <hr />
         <footer>
-            <p style="text-align: center">1234 Mclovin Lane, Southend, NC 22202</p>
-            <p style="text-align: center">(704) 432-2335</p>
+            <p>1234 Mclovin Lane, Southend, NC 22202</p>
+            <p>(704) 432-2335</p>
         </footer>
     </body>
 </html>
